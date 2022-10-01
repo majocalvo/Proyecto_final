@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 640px)">
-    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 640px) and (max-width: 1280px)">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 1280px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 640px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 640px) and (min-width: 1280px)">
     <link rel="stylesheet" href="style.css">
 
     <title>Angelmo Tours</title>
@@ -19,13 +18,11 @@
         <a class="inicio_menu" href="#ancla-2">Conócenos</a>
         <a class="inicio_menu" href="#ancla-3">Tours</a>
         <a class="inicio_menu" href="#ancla-4">Clima</a>
-   
-
     </nav>
 
     <header>
         <h1>Bienvenidos a Angelmo Tours!</h1>
-
+        <h1>¡Tu viaje nos Importa!</h1>
     </header>
 
     <main>
@@ -42,10 +39,13 @@
             </div>
             <div class="item6">
                 <h1>Nosotros</h1>
-                <p>Angelmó Tour es una agencia que, desde Puerto Montt y Puerto Varas, lleva a los turistas a distintos
-                    puntos de interés turístico de la zona.</p>
-                <p>Creada para satisfacer sus expectativas, con una serie de excursiones, actividades y tours que se
-                    transformarán en experiencias de primer nivel.</p>
+                <div class="item6_texto">
+                    <p>Angelmó Tour es una agencia que, desde Puerto Montt y Puerto Varas, lleva a los turistas a
+                        distintos
+                        puntos de interés turístico de la zona.</p>
+                    <p>Creada para satisfacer sus expectativas, con una serie de excursiones, actividades y tours que se
+                        transformarán en experiencias de primer nivel.</p>
+                </div>
             </div>
             <div class="item7"></div>
             <div class="item8">
@@ -57,9 +57,10 @@
 
         </div>
     </main>
+
+    <!--  -->
     <a name="ancla-3"></a>
     <section id="item">
-       
         <div class="item_box">
             <img class="item_box_imagen" src="./img/volcan_osorno.jpg" alt="" srcset="">
             <a class="item_box_titulo" href="#ancla-1">Volcán Osorno y Saltos del Petrohue</a>
@@ -132,7 +133,7 @@
     <footer>
         <a name="ancla-2"></a>
         <div class="container_footer">
-            
+
             <div class="container_footer_item">
                 <h1>Quienes somos</h1>
                 <p>Somos una agencia de excursiones creada para satisfacer plenamente al turista que nos visita,
@@ -148,8 +149,8 @@
             <div class="container_footer_mapa">
                 <h1>Ubicación</h1>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.5668864818625!2d-72.92556134047456!3d-41.45520965267516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183af3abb8bfcf%3A0x4edfe52231e9d0e0!2sC.%20A%20496%2C%20Puerto%20Montt%2C%20Los%20Lagos!5e0!3m2!1ses-419!2scl!4v1664586999388!5m2!1ses-419!2scl"
-                    width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8832.23037004677!2d-72.93208618824458!3d-41.45496424022828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183af3abb8bfcf%3A0x4edfe52231e9d0e0!2sC.%20A%20496%2C%20Puerto%20Montt%2C%20Los%20Lagos!5e0!3m2!1ses-419!2scl!4v1664611255705!5m2!1ses-419!2scl"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -163,12 +164,14 @@
 
     <section class="reserva">
         <a name="ancla-1"></a>
-        <h2 class="reserva_titulo">AGENDAR RESERVA </h2>
         <form class="reserva_formulario">
+            <h2 class="reserva_titulo">AGENDAR RESERVA </h2>
+            <div class="reserva_formulario_fila">
+                <input type="date" id="fecha"> </input>
+            </div>
             <div class="reserva_formulario_fila">
                 <input type="text" name="nombre" placeholder="Nombre"> </input>
             </div>
-
             <div class="reserva_formulario_fila">
                 <input type="email" name="email" placeholder="Correo"> </input>
             </div>
@@ -183,8 +186,9 @@
             <div class="reserva_formulario_fila">
                 <input type="number" name="telefono" placeholder="Teléfono"> </input>
             </div>
+
             <div class="reserva_formulario_fila">
-                <select name="destino" id="" style="width:167px">
+                <select name="destino" id="">
                     <option value="" disabled selected>Selecciona tour</option>
                     <option>Volcán Osorno y Saltos del Petrohue</option>
                     <option>Tour Chiloé Mitológico</option>
@@ -198,30 +202,60 @@
                     <option>Avistamiento de Aves en Quenuir - Maullín</option>
                     <option>Aves del Río Maullín</option>
                     <option>Aves Carretera Austral Norte</option>
-    
+                </select>
             </div>
             <div class="reserva_formulario_fila">
-                <input type="date" id="start" name="trip-start" style="width:163px"> </input>
-            </div>
-            <div class="reserva_formulario_fila">
-                <select name="pago" id="" style="width:167px">
+                <select name="pago" id="">
                     <option value="" disabled selected>Método de Pago</option>
                     <option>Efectivo</option>
                     <option>Débido</option>
                     <option>Crédito</option>
                 </select>
-
             </div>
-          <button class="reserva_formulario_enviar">Enviar</button>
+            <button class="reserva_formulario_enviar" type="button">Enviar</button>
         </form>
 
     </section>
 
-   <section>
-    <a name="ancla-4"></a>
 
+    <section id="clima">
+        <a name="ancla-4"></a>
+        <form class="reserva_formulario">
+            <h2 class="reserva_titulo">BUSCADOR DE CLIMA </h2>
 
-   </section>
+            <div id="contenedor_clima">
+                <div id="contenedor_clima_ciudad" class="clima_ciudad">
+                    Clima en ...
+                </div>
+                <div id="contenedor_clima_icono">
+                    <img src="">
+                </div>
+                <div id="contenedor_clima_grados" class="clima_grados"></div>
+                <div id="contenedor_clima_grados_max" class="clima_grados_m"></div>
+                <div id="contenedor_clima_grados_min" class="clima_grados_m"></div>
+            </div>
+
+            <div class="reserva_formulario_fila">
+                <select name="" id="paises">
+                    <option value="CL">Chile</option>
+                    <option value="AR">Argentina</option>
+                    <option value="PE">Peru</option>
+                    <option value="CO">Colombia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="FR">Francia</option>
+                    <option value="SP">Espana</option>
+                    <option value="PT">Portugal</option>
+                    <option value="GR">Alemania</option>
+                </select>
+            </div>
+            <div class="reserva_formulario_fila">
+                <input id="ciudad" type="text" placeholder="ciudad" />
+            </div>
+            <button class="reserva_formulario_enviar" id="buscar" type="button">Consultar el Clima</button>
+        </form>
+    </section>
+
 
 
 
