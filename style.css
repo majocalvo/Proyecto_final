@@ -179,7 +179,7 @@ header h1{
 }
 
 .item_box_imagen{
-width: 90%;
+width: 70%;
 filter: brightness(70%);
 height: 100px ;
 
@@ -244,7 +244,7 @@ height: 100px ;
 }
 
 .container_footer_item p{
-font-size: var(--tamaño8px);
+font-size: 20px;
 margin-top: var(--tamaño10px);
 }
 
@@ -255,7 +255,7 @@ margin-top: var(--tamaño10px);
     width: 90%;
 }
 .container_footer h1{
-    font-size: var(--tamaño10px);
+    font-size: var(--tamaño20px);
     text-align: center;
 }
 
