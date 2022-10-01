@@ -20,23 +20,23 @@
     flex-direction: column;
   }
 
-.container{
-    width:100px;
-}
-
-.item5{
+  .item5 {
     width: 16px;
-   padding: 0;
-}
+    padding: 0;
+  }
 
-
-.item6{
+  .item6 {
     width: 16px;
-}
+  }
+  .item_box_imagen {
+    height: 150px;
+  }
+  .container {
+    width: 100px;
+  }
 
-.container_footer{
+  .container_footer {
     width: 200px;
     flex-wrap: wrap;
-}
-
+  }
 }

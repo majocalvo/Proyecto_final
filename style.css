@@ -271,7 +271,7 @@ header h1 {
 }
 .reserva_formulario_fila select {
   padding: 5px 5px;
-  width: 52%;
+  width: 51%;
 }
 .reserva_formulario_enviar {
   border-radius: 5px;
