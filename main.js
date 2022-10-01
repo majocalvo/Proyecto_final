@@ -78,3 +78,16 @@ $buscar.addEventListener("click", function () {
   console.log("url: " + url);
   console.log("url_selected: " + url_select);
 });
+
+
+//Capturar click en el Link Tours.
+const $tours = document.querySelectorAll('.item_box_titulo');
+const $selected_tour= document.getElementById("destino_tour");
+
+$tours.forEach(tour => {
+    tour.addEventListener('click', function handleClick(event) {
+    console.log('box clicked', tour.getAttribute("value"));
+    document.getElementById("destino_tour").selectedIndex=tour.getAttribute("value");
+    
+  });
+});

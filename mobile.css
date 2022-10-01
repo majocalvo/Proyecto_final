@@ -5,7 +5,8 @@
   }
 
   .inicio_logo {
-    width: 150px;
+    min-width: 200px;
+    height: 150px;
   }
   .inicio_menu {
     width: 80px;

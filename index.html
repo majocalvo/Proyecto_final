@@ -64,63 +64,63 @@
     <section id="item">
         <div class="item_box">
             <img class="item_box_imagen" src="./img/volcan_osorno.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Volcán Osorno y Saltos del Petrohue</a>
+            <a value="1" class="item_box_titulo" href="#ancla-1">Volcán Osorno y Saltos del Petrohue</a>
 
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/chiloe.png" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Tour Chiloé Mitológico</a>
+            <a value="2" class="item_box_titulo" href="#ancla-1">Tour Chiloé Mitológico</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/termas.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Termas del Sol</a>
+            <a value="3" class="item_box_titulo" href="#ancla-1">Termas del Sol</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/saltos_petrohue.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Saltos de Petrohue</a>
+            <a value="4" class="item_box_titulo" href="#ancla-1">Saltos de Petrohue</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/alerce_andino.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Parque Nacional Alerce Andino / Alerce Milenario</a>
+            <a value="5" class="item_box_titulo" href="#ancla-1">Parque Nacional Alerce Andino / Alerce Milenario</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/tagua_tagua.png" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Lago Tagua Tagua y Patagonia Salvaje</a>
+            <a value="6" class="item_box_titulo" href="#ancla-1">Lago Tagua Tagua y Patagonia Salvaje</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/cochamo.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Columpios y Cascada de Cochamo</a>
+            <a value="7" class="item_box_titulo" href="#ancla-1">Columpios y Cascada de Cochamo</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/chiloe_brujos.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Chiloé, Tierra de Brujos y Leyendas</a>
+            <a value="8" class="item_box_titulo" href="#ancla-1">Chiloé, Tierra de Brujos y Leyendas</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/hornopiren.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Carretera Austral Hornopiren</a>
+            <a value="9" class="item_box_titulo" href="#ancla-1">Carretera Austral Hornopiren</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/aves_quenuir.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Avistamiento de Aves en Quenuir - Maullín</a>
+            <a value="10" class="item_box_titulo" href="#ancla-1">Avistamiento de Aves en Quenuir - Maullín</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/rio_maullin.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Aves del Río Maullín</a>
+            <a value="11" class="item_box_titulo" href="#ancla-1">Aves del Río Maullín</a>
 
         </div>
         <div class="item_box">
             <img class="item_box_imagen" src="./img/aves_carretera.jpg" alt="" srcset="">
-            <a class="item_box_titulo" href="#ancla-1">Aves Carretera Austral Norte</a>
+            <a value="12" class="item_box_titulo" href="#ancla-1">Aves Carretera Austral Norte</a>
         </div>
     </section>
 
@@ -187,24 +187,28 @@
             <div class="reserva_formulario_fila">
                 <input type="number" name="telefono" placeholder="Teléfono"> </input>
             </div>
-
             <div class="reserva_formulario_fila">
-                <select name="destino" id="">
+                <input id="valor_pp" min="0" step="any" type="number" name=""> </input>
+            </div>
+            <div class="reserva_formulario_fila">
+                <select name="destino" id="destino_tour">
                     <option value="" disabled selected>Selecciona tour</option>
-                    <option>Volcán Osorno y Saltos del Petrohue</option>
-                    <option>Tour Chiloé Mitológico</option>
-                    <option>Termas del Sol</option>
-                    <option>Saltos del Petrohue</option>
-                    <option>Parque Nacional Alerce Andino/ Alerce Milenario</option>
-                    <option>Lago Tagua Tagua y Patagonia Salvaje</option>
-                    <option>Columpios y Cascada de Cochamo</option>
-                    <option>Chiloé, Tierra de Brujos y Leyendas</option>
-                    <option>Carretera Austral Hornopiren</option>
-                    <option>Avistamiento de Aves en Quenuir - Maullín</option>
-                    <option>Aves del Río Maullín</option>
-                    <option>Aves Carretera Austral Norte</option>
+                    <option value="1">Volcán Osorno y Saltos del Petrohue</option>
+                    <option value="2">Tour Chiloé Mitológico</option>
+                    <option value="3">Termas del Sol</option>
+                    <option value="4">Saltos del Petrohue</option>
+                    <option value="5">Parque Nacional Alerce Andino/ Alerce Milenario</option>
+                    <option value="6">Lago Tagua Tagua y Patagonia Salvaje</option>
+                    <option value="7">Columpios y Cascada de Cochamo</option>
+                    <option value="8">Chiloé, Tierra de Brujos y Leyendas</option>
+                    <option value="9">Carretera Austral Hornopiren</option>
+                    <option value="10">Avistamiento de Aves en Quenuir - Maullín</option>
+                    <option value="11">Aves del Río Maullín</option>
+                    <option value="12">Aves Carretera Austral Norte</option>
                 </select>
             </div>
+           
+
             <div class="reserva_formulario_fila">
                 <select name="pago" id="">
                     <option value="" disabled selected>Método de Pago</option>
