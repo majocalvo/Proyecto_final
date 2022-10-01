@@ -1,0 +1,284 @@
+:root{
+--tamaño30px: 30px;
+--tamaño20px: 20px;
+--tamaño15px: 15px;
+--tamaño10px: 10px;
+--tamaño8px: 8px;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    display:flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.inicio_logo{
+    height: 80%;
+}
+
+.inicio_menu{
+    font-size: 10px;
+    text-decoration: none;
+    color:black;
+    border-style: groove;
+    padding: 10px;
+    border-color: #719430;
+    
+}
+
+header{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+    height: 90vh;
+    background-image: url("./img/cochamo.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+header h1{
+    font-size: 30px;
+    color:beige;
+}
+
+
+
+.container{
+    text-align: center;
+    display:grid;
+    grid-template-rows: 1fr 20fr 6fr;
+    grid-template-columns: (repeat, 1fr);
+    grid-template-areas:
+    "item1 item2 item3 item4"
+    "item5 item5 item6 item6" 
+    "item7 item8 item8 item9";
+}
+
+.item1{
+    background-color: #719430;
+    grid-area: item1;
+}
+
+.item2{
+    background-color: #92BB46;
+    grid-area: item2;
+}
+
+.item3{
+    background-color: #ACD464;
+    grid-area: item3;
+}
+
+.item4{
+    background-color: #E1FBB2;
+    grid-area: item4;
+}
+.item5{
+    background-color:white;
+    color:black;
+    grid-area: item5;
+    padding: 40px;
+}
+
+.item5 h1{
+    font-size:15px;
+
+}
+.item5 p{
+    color:green;
+    font-size: 8px;
+    margin-top:20px;
+}
+.item5 h2{
+    color:rgb(1, 65, 20);
+    font-size:10px ;
+    margin-top: 30px;
+}
+
+.item6{
+    background-image: url("./img/angelmo3.jpg");
+    background-size: cover;
+    background-position: -100px;
+    color:white;
+    grid-area : item6;
+    padding: 40px;
+
+}
+
+.item6 h1{
+    font-size: medium;
+} 
+.item6 p{
+    margin-top: 30px;
+    font-size: small;
+}
+
+.item7{
+    background-color: #719430;
+    grid-area: item7;
+}
+
+.item8{
+    display:flex;
+    align-items: center;
+    background-color: #92BB46;
+    color:aliceblue;
+    grid-area: item8;
+
+}
+
+.item8 h1{
+    font-size: small;
+   
+
+}
+
+.item9{
+    background-color:  #719430;
+    grid-area: item9;
+}
+
+
+#item{
+    background-color: #92BB46;
+    margin:0%;
+    padding: 10px;
+}
+
+
+.item_box{
+    position: relative;
+    display:inline-block;
+    width: 32%;
+    overflow: hidden;
+
+}
+
+.item_box_titulo{
+    position:absolute;
+    font-size: 10px;
+    width: 70%;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left:50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+.item_box_imagen{
+width: 90%;
+filter: brightness(70%);
+height: 100px ;
+
+}
+
+.item_box_imagen:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    transition: .3s ease-in;
+    
+    }
+
+
+
+.container1{
+    text-align: center;
+    margin-bottom: 1px;
+    height:10px;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: (repeat, 1fr);
+    grid-template-areas:
+    "item10 item11 item12 item13";
+    }
+
+.item10{
+    background-color: #719430;
+    grid-area: item10;
+}
+
+.item11{
+    background-color: #92BB46;
+    grid-area: item11;
+}
+
+.item12{
+    background-color: #ACD464;
+    grid-area: item12;
+}
+
+.item13{
+    background-color: #E1FBB2;
+    grid-area: item13;
+}
+
+.container_footer{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 220px;
+
+}
+
+.container_footer_item{
+    width: 100px;
+    padding: var(--tamaño20px);
+    
+}
+.container_footer_item h1{
+ font-size: var(--tamaño10px);
+}
+
+.container_footer_item p{
+font-size: var(--tamaño8px);
+margin-top: var(--tamaño10px);
+}
+
+.container_footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.container_footer h1{
+    font-size: var(--tamaño10px);
+    text-align: center;
+}
+
+.reserva{
+    width: 200px;
+    margin: 70px auto;
+    align-items:center ;
+text-align: center;
+}
+.reserva_formulario{
+display:block;
+margin-top: 20px;
+background-color: #E1FBB2;
+padding: 20px;
+}
+
+.reserva_formulario_enviar{
+    border-radius: 5px;
+    border-color: #719430;
+    background-color: #E1FBB2;
+    font-size: var(--tamaño10px);
+    margin-top: 20px;
+    height: 30px;
+    width: 50px;
+}
+

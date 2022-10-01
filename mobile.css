@@ -1,0 +1,40 @@
+@media screen and (max-width: 640px) {
+  nav {
+    flex-wrap: wrap;
+    height: 400px;
+  }
+
+  .inicio_logo {
+    width: 150px;
+  }
+  .inicio_menu {
+    width: 80px;
+    height: 5px;
+  }
+
+  header {
+    height: 20vh;
+    width: 200px;
+    margin-top: 80px;
+  }
+
+.container{
+    width:100px;
+}
+
+.item5{
+    width: 16px;
+   padding: 0;
+}
+
+
+.item6{
+    width: 16px;
+}
+
+.container_footer{
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+}
