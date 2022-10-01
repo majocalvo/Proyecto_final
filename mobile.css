@@ -1,43 +1,64 @@
 @media screen and (max-width: 640px) {
   nav {
     flex-wrap: wrap;
-    height: 400px;
+    height: 200px;
   }
 
   .inicio_logo {
-    min-width: 200px;
-    height: 150px;
+    width: 400px;
+
   }
   .inicio_menu {
-    width: 80px;
-    height: 5px;
+    width: 100px;
+  
   }
 
   header {
-    height: 20vh;
-    width: 200px;
+    height: 60vh;
+    width: auto;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
   }
 
+  .container {
+    min-width: 400px;
+   
+  }
+
+  .container {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 10px;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "item1 "
+        "item3 "
+        "item5 "
+        "item6 "
+        "item7 "
+        "item8 "
+        "item9 ";
+}
+
   .item5 {
-    width: 16px;
-    padding: 0;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
   }
 
   .item6 {
-    width: 16px;
+    width: auto;
+  }
+  .item8 {
+ padding: 10px;
   }
   .item_box_imagen {
     height: 150px;
   }
-  .container {
-    width: 100px;
-  }
-
+ 
   .container_footer {
-    width: 200px;
+    width: auto;
     flex-wrap: wrap;
   }
 }
